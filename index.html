@@ -1,863 +1,773 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Portafolio - GarySalazar</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Gary Salazar — AI Software Engineer &amp; Backend Developer</title>
+  <meta name="description"
+    content="Portafolio de Gary Salazar, AI Software Engineer y Backend Developer. Especializado en IA generativa, NLP, arquitecturas RAG, asistentes conversacionales, microservicios con Node.js y Python, procesos ETL y despliegues en IBM Cloud, AWS y Azure.">
+  <meta name="keywords"
+    content="AI Software Engineer, Backend Developer, IA generativa, NLP, RAG, Node.js, Python, microservicios, AWS, IBM Cloud, Azure, Docker, Kubernetes, ETL, Gary Salazar">
+  <meta name="author" content="Gary Salazar">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Gary Salazar — AI Software Engineer &amp; Backend Developer">
+  <meta property="og:description"
+    content="Especialista en IA generativa, NLP, arquitecturas RAG, microservicios e integraciones empresariales. Backend con Node.js y Python, cloud en IBM Cloud, AWS y Azure.">
+  <meta property="og:image" content="https://garysalazargt.github.io/portafolio/assets/img/fotos.png">
+  <meta property="og:url" content="https://garysalazargt.github.io/portafolio/">
+  <meta property="og:locale" content="es_GT">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gary Salazar — AI Software Engineer &amp; Backend Developer">
+  <meta name="twitter:description"
+    content="Especialista en IA generativa, NLP, RAG, microservicios e integraciones empresariales.">
+  <meta name="twitter:image" content="https://garysalazargt.github.io/portafolio/assets/img/fotos.png">
+
+  <meta name="theme-color" content="#0a1f44">
 
   <!-- Favicons -->
   <link href="assets/img/code.png" rel="icon">
   <link href="assets/img/code.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@500;600;700;800&display=swap"
     rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+  <!-- Main CSS (rediseño 2026) -->
+  <link href="assets/css/portfolio.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: iPortfolio - v3.1.0
+  * Rediseño 2026 basado en la plantilla iPortfolio v3.1.0
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
 
-<style>
-  .imgPorfil {
-    width: max-content;
-    height: max-content;
-  }
-</style>
-
 <body>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
+  <!-- Toggle móvil -->
+  <button class="mobile-nav-toggle" id="navToggle" aria-label="Abrir menú de navegación" aria-expanded="false"
+    aria-controls="sidebar">
+    <i class="bi bi-list" aria-hidden="true"></i>
+  </button>
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
 
-      <div class="profile">
-        <img src="assets/img/fotos.png" alt="Foto de perfil" class="img-fluid rounded-circle imgPorfil">
-        <h1 class="text-light"><a href="index.html">Gary Salazar</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/garysalazarV" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/garii_salazar/?hl=es-la" class="instagram"><i
-              class="bx bxl-instagram"></i></a>
-          <a href="https://github.com/GarySalazarGT" class="google-plus"><i class="bx bxl-github"></i></a>
-          <a href="https://bitbucket.org/GarySalazarGT/workspace/repositories" class="facebook"><span class="iconify"
-              data-icon="mdi:bitbucket" data-inline="false"></span></a>
-          <a href="https://www.linkedin.com/in/gary-salazar-43a0241ab/" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Biografía</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Conocimientos</span></a>
-          </li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Experiencia</span></a>
-          </li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-              <span>Proyectos</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar">
+    <div class="profile-card">
+      <img src="assets/img/fotos.png" alt="Retrato de Gary Salazar" class="avatar" width="130" height="130">
+      <h1 class="name"><a href="index.html" style="color:#fff;">Gary Salazar</a></h1>
+      <p class="role">AI Software Engineer</p>
+      <nav class="social-links" aria-label="Perfiles profesionales">
+        <a href="https://github.com/GarySalazarGT" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+            class="bx bxl-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/gary-salazar-43a0241ab/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn"><i class="bx bxl-linkedin" aria-hidden="true"></i></a>
+        <a href="https://bitbucket.org/GarySalazarGT/workspace/repositories" target="_blank" rel="noopener noreferrer"
+          aria-label="Bitbucket"><i class="bx bxl-git" aria-hidden="true"></i></a>
+      </nav>
     </div>
-  </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
+    <nav id="navbar" class="nav-menu" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#hero" class="nav-link active"><i class="bx bx-home" aria-hidden="true"></i> <span>Inicio</span></a></li>
+        <li><a href="#about" class="nav-link"><i class="bx bx-user" aria-hidden="true"></i> <span>Sobre mí</span></a></li>
+        <li><a href="#skills" class="nav-link"><i class="bx bx-chip" aria-hidden="true"></i> <span>Especialidades</span></a></li>
+        <li><a href="#resume" class="nav-link"><i class="bx bx-briefcase" aria-hidden="true"></i> <span>Experiencia</span></a></li>
+        <li><a href="#portfolio" class="nav-link"><i class="bx bx-book-content" aria-hidden="true"></i> <span>Proyectos</span></a></li>
+        <li><a href="#certs" class="nav-link"><i class="bx bx-award" aria-hidden="true"></i> <span>Certificaciones</span></a></li>
+        <li><a href="#contact" class="nav-link"><i class="bx bx-envelope" aria-hidden="true"></i> <span>Contacto</span></a></li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      &copy; <span id="year"></span> Gary Salazar
+    </div>
+  </aside>
+
+  <!-- ======= Hero ======= -->
+  <section id="hero">
+    <div class="hero-content" data-aos="fade-up">
+      <p class="eyebrow">AI Software Engineer &amp; Backend Developer</p>
       <h1>Gary Salazar</h1>
-      <p>Conocimientos en: <span class="typed"
-          data-typed-items="SQL, Python, Flask, Laravel, MongoDB, JavaScript, NodeJs, ReactNative, Angular, Ubuntu/Linux, Docker, Git, Bootstrap, Kubernetes, Nextjs, React"></span>
+      <p class="typed-wrap">Trabajo con
+        <span class="typed"
+          data-typed-items="IA Generativa, NLP, Arquitecturas RAG, Asistentes conversacionales, Node.js, Python, Microservicios, APIs e integraciones, AWS, IBM Cloud, Azure, Docker &amp; Kubernetes, Procesos ETL"></span>
       </p>
+      <div class="hero-cta">
+        <a href="assets/docs/CV_Gary_Salazar.pdf" class="btn btn-cv" download>
+          <i class="bx bx-download" aria-hidden="true"></i> Descargar CV
+        </a>
+        <a href="#portfolio" class="btn btn-outline"><i class="bx bx-briefcase" aria-hidden="true"></i> Ver proyectos</a>
+        <a href="#contact" class="btn btn-outline"><i class="bx bx-envelope" aria-hidden="true"></i> Contactar</a>
+      </div>
     </div>
-  </section><!-- End Hero -->
+  </section>
 
-  <main id="main">
+  <main id="main" class="main">
 
-    <!-- Biografía -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Biografía</h2>
+    <!-- ======= Sobre mí ======= -->
+    <section id="about" class="section">
+      <div class="container-xl">
+        <div class="section-head" data-aos="fade-up">
+          <h2>Sobre mí</h2>
+          <p>Desarrollador de software especializado en inteligencia artificial y desarrollo backend.</p>
         </div>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/fotos.png" style="box-shadow: 2px 2px 5px rgb(35, 85, 160);"
-              class="img-fluid rounded-circle" alt="">
+        <div class="about-grid">
+          <div class="about-photo" data-aos="fade-right">
+            <img src="assets/img/fotos.png" alt="Fotografía de Gary Salazar" width="320" height="400">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Desarrollador Backend.</h3>
-            <br><br>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Nombre completo:</strong> <span>Gary Emmanuel Salazar
-                      Vasquez</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Grado Académico:</strong> <span>Cursando 7mo Semestre,
-                      Ingeniería en Sistemas</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Teléfono celular:</strong> <span>+502 3002-0662</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Correo:</strong>
-                    <span>salazarvasquezgaryemmanuel@gmail.com</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Fecha de nacimiento:</strong> <span>10 de agosto de
-                      1997</span>
-                  </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Dirección:</strong> <span>1 avenida, Lote 148,
-                      apartamento "A",
-                      zona 6, San José Jocotales, Chinautla</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Ciudad:</strong> <span>Guatemala, Guatemala</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- Biografía -->
-
-    <!-- Personalidad -->
-    <section id="facts" class="facts">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Personalidad</h2>
-        </div>
-
-        <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <p><strong>Responsable</strong></p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <!-- <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                class="purecounter"></span> -->
-              <p><strong>Autodidacta</strong></p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <!-- <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
-                class="purecounter"></span> -->
-              <p><strong>Proactivo</strong></p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <!-- <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
-                class="purecounter"></span> -->
-              <p><strong>Entusiasta</strong></p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-    <!-- Personalidad -->
-
-    <!-- Conocimientos -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Conocimientos</h2>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="progress">
-              <span class="skill">HTML <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="75">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Bootstrap <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="80">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Laravel <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="90">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Sql Server <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="80">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Metodología Scrum <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="90">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Airflow <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="80">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">MySql <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">GitHub <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Git <i class="val">85%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="85">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Ubuntu <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="70">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Docker <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="50">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">React Native <i class="val">65%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="80">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Python <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="80">
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Conovimientos -->
-
-    <!-- Educación y experiencia -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Educación</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <div class="resume-item pb-0">
-              <h4>Colegio Mixto "La Niñez"</h4>
-              <p><em>Chinautla Z6, Guatemala.</em></p>
-              <h5>2004 - 2010</h5>
-              <p><em>Educación Primaria.</em></p>
-            </div>
-
-            <div class="resume-item">
-              <h4>Colegio Mixto Cristiano Amor Y Fe</h4>
-              <p><em>Chinautla Z6, Guatemala.</em></p>
-              <h5>2011 - 2013</h5>
-              <p><em>Educación Secundaria.</em></p>
-            </div>
-
-            <div class="resume-item">
-              <h4>Colegio Evangélico La Patria</h4>
-              <p><em>Guatemala Z2, Guatemala.</em></p>
-              <h5>2014 - 2015</h5>
-              <p><em>Bachillerato En Computación Con Orientación Científica</em></p>
-            </div>
-
-            <div class="resume-item">
-              <h4>Universidad Mariano Gálvez de Guatemala</h4>
-              <p><em>Chinautla, Guatemala.</em></p>
-              <h5>2016 - Actualidad</h5>
-              <p><em>Igeniería en Sistemas de Información y Ciencias de la computación.</em></p>
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Experiencia Laboral</h3>
-
-            <div class="resume-item">
-              <h4>AI Software Specialist</h4>
-              <h5>23/10/2023 - Actualmente</h5>
-              <p><em>18 Calle 24-69, Zona 10 Blvd. Los Próceres, Centro Empresarial Zona Pradera, Torre V, Nivel 1</em>
-              </p>
-              <p><em><b>GBM Guatemala</b></em></p>
-              <ul>
-                <li><b>Desarrollo de chatbots</b> utilizando Classic AI y GenAI.</li>
-                <li><b>Implementación de arquitecturas RAG</b> para integrar información mediante contexto o embeddings.
-                </li>
-                <li><b>Desarrollo de microservicios</b> en NodeJS y Flask, con integración de APIs de IA.</li>
-                <li><b>Diseño e implementación de WebSockets</b> para comunicación en tiempo real en aplicaciones
-                  interactivas.</li>
-                <li><b>Creación de POCs y MVPs</b> enfocados en inteligencia artificial y automatización de procesos.
-                </li>
-                <li><b>Integración de Watson Assistant</b> con GenAI y acciones personalizadas para mejorar la
-                  interacción.</li>
-                <li><b>Optimización y despliegue de backend y frontend</b> en IBM Cloud y AWS, utilizando Kubernetes
-                  y Docker.</li>
-                <li><b>Creación de soluciones RAG</b> en Azure AI con Azure Document Intelligence, Azure AI
-                  Search, Azure OpenAI y embeddings personalizados.</li>
-                <li><b>Implementación de arquitecturas RAG en AWS</b> utilizando AWS Textract, Amazon
-                  OpenSearch, AWS Bedrock y embeddings personalizados.</li>
-                <li><b>Despliegue de modelos de IA</b> en entornos cloud, utilizando IBM Watson Machine Learning y Azure
-                  Machine Learning.</li>
-                <li><b>Gestión de bases de datos</b> con MongoDB para almacenamiento de datos.</li>
-                <li><b>Desarrollo de frontend</b> en Next.js y React, asegurando una experiencia fluida en aplicaciones
-                  web.</li>
-                <li><b>Seguridad y autenticación</b> con OAuth2, JWT y encriptación para proteger datos de usuarios.
-                </li>
-                <li><b>Optimización de arquitecturas de backend</b> para mejorar el rendimiento y reducir latencias en
-                  consultas de IA.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4><b>Backend Developer</b></h4>
-              <h5>01/10/2021 - 16/10/2023</h5>
-              <p><em>Spazio, Centro de Negocios, Oficina 302 "B"</em></p>
-              <p><em><b>Niu Solution</b></em></p>
-              <ul>
-                <li><b>Desarrollo y despliegue de servidores y APIs</b> en Node.js utilizando AWS.</li>
-                <li><b>Conexión a bases de datos</b> mediante ORM para optimización y gestión eficiente de datos.</li>
-                <li><b>Desarrollo de CRUDs</b> en Node.js utilizando Express.js.</li>
-                <li><b>Automatización de tareas en Linux</b> mediante scripts en Bash.</li>
-                <li><b>Despliegue de servicios en Linux</b> utilizando Apache y Nginx.</li>
-                <li><b>Configuración de entornos en servidores Linux</b> para producción y desarrollo.</li>
-                <li><b>Implementación de Airflow</b> para la creación de DAGs e integración de procesos ETL.</li>
-                <li><b>Integración con múltiples fuentes de datos</b> para procesos ETL utilizando Python.</li>
-                <li><b>Configuración y administración de MongoDB</b> para almacenamiento y recuperación de datos.</li>
-              </ul>
-            </div>
-
-            <div class="resume-item">
-              <h4><b>Desarrollador Web y Móvil</b></h4>
-              <h5>12/10/2020 - 17/06/2021</h5>
-              <p><em>Gran Centro comercial, zona 4, Guatemala, torre 2, oficina 604</em></p>
-              <p><em><b>Group Technology, IdeaCodex</b></em></p>
-              <ul>
-                <li><b>Desarrollo de aplicaciones web</b> utilizando Laravel como framework principal.</li>
-                <li><b>Diseño y estructuración de interfaces</b> en Laravel Blade para mejorar la experiencia de
-                  usuario.</li>
-                <li><b>Desarrollo de aplicaciones móviles híbridas</b> en React Native para Android e iOS.</li>
-                <li><b>Desarrollo e integración de APIs RESTful</b> para conectar aplicaciones móviles con backends.
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-    <!-- Educación y experiencia -->
-
-    <!-- Portafolio -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Proyectos</h2>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter=".filter-tecun">Grupo Tecun</li>
-              <li data-filter=".filter-payroll">Payroll</li>
-              <li data-filter=".filter-app">App Tecun</li>
-              <li data-filter=".filter-card">Habilidades</li>
-              <li data-filter=".filter-certify">Diplomas</li>
+          <div class="about-text" data-aos="fade-left">
+            <h3>AI Software Engineer &amp; Backend Developer</h3>
+            <p class="lead">
+              Diseño e implemento soluciones de IA generativa, NLP y arquitecturas RAG, junto con
+              servicios backend y microservicios para entornos empresariales. Construyo asistentes
+              conversacionales multicanal, integraciones de APIs, despliegues en la nube con contenedores
+              y procesos ETL, apoyando a clientes empresariales y del sector bancario.
+            </p>
+            <ul class="about-facts">
+              <li><i class="bi bi-chevron-right" aria-hidden="true"></i> <span><strong>Nombre:</strong> Gary Emmanuel Salazar Vásquez</span></li>
+              <li><i class="bi bi-chevron-right" aria-hidden="true"></i> <span><strong>Rol:</strong> AI Software Specialist en GBM</span></li>
+              <li><i class="bi bi-chevron-right" aria-hidden="true"></i> <span><strong>Formación:</strong> Ingeniería en Sistemas · 41 de 50 cursos aprobados</span></li>
+              <li><i class="bi bi-chevron-right" aria-hidden="true"></i> <span><strong>Ubicación:</strong> Guatemala</span></li>
+              <li><i class="bi bi-chevron-right" aria-hidden="true"></i> <span><strong>Correo:</strong> salazarvasquezgaryemmanuel@gmail.com</span></li>
+              <li><i class="bi bi-chevron-right" aria-hidden="true"></i> <span><strong>Teléfono:</strong> +502 3002-0662</span></li>
             </ul>
+            <div class="chips">
+              <span class="chip"><i class="bi bi-briefcase" aria-hidden="true"></i> +4 años de experiencia</span>
+              <span class="chip"><i class="bi bi-cpu" aria-hidden="true"></i> IA y backend</span>
+              <span class="chip"><i class="bi bi-cloud" aria-hidden="true"></i> Cloud y microservicios</span>
+              <span class="chip"><i class="bi bi-chat-dots" aria-hidden="true"></i> Bots multicanal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Especialidades (sin barras de %) ======= -->
+    <section id="skills" class="section section-alt">
+      <div class="container-xl">
+        <div class="section-head" data-aos="fade-up">
+          <h2>Especialidades técnicas</h2>
+          <p>Tecnologías y áreas en las que trabajo, organizadas por categoría.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card" data-aos="fade-up">
+            <div class="skill-head">
+              <span class="skill-icon"><i class="bx bx-brain" aria-hidden="true"></i></span>
+              <h3>IA Generativa &amp; NLP</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">IA Generativa</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">Arquitecturas RAG</span>
+              <span class="skill-tag">Asistentes conversacionales multicanal</span>
+              <span class="skill-tag">WhatsApp &amp; Facebook</span>
+              <span class="skill-tag">IBM Watson Assistant</span>
+              <span class="skill-tag">Embeddings</span>
+              <span class="skill-tag">Prompt Engineering</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-aos="fade-up" data-aos-delay="50">
+            <div class="skill-head">
+              <span class="skill-icon"><i class="bx bx-server" aria-hidden="true"></i></span>
+              <h3>Backend &amp; APIs</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Express.js</span>
+              <span class="skill-tag">Microservicios</span>
+              <span class="skill-tag">APIs REST</span>
+              <span class="skill-tag">WebSockets</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="skill-head">
+              <span class="skill-icon"><i class="bx bx-cloud" aria-hidden="true"></i></span>
+              <h3>Cloud &amp; DevOps</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">IBM Cloud</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Azure</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+              <span class="skill-tag">CI/CD</span>
+              <span class="skill-tag">Linux / Ubuntu</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="skill-head">
+              <span class="skill-icon"><i class="bx bx-data" aria-hidden="true"></i></span>
+              <h3>Datos &amp; ETL</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Procesos ETL</span>
+              <span class="skill-tag">Apache Airflow</span>
+              <span class="skill-tag">MongoDB</span>
+              <span class="skill-tag">SQL Server</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Python (datos)</span>
+            </div>
+          </article>
+
+          <article class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="skill-head">
+              <span class="skill-icon"><i class="bx bx-shield-quarter" aria-hidden="true"></i></span>
+              <h3>Prácticas &amp; Seguridad</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">OAuth2 / JWT</span>
+              <span class="skill-tag">Git &amp; GitHub</span>
+              <span class="skill-tag">Metodología Scrum</span>
+              <span class="skill-tag">Prototipos funcionales</span>
+              <span class="skill-tag">Soluciones piloto</span>
+              <span class="skill-tag">Validación técnica</span>
+              <span class="skill-tag">Automatización de procesos</span>
+            </div>
+          </article>
+
+          <article class="skill-card skill-card-secondary" data-aos="fade-up" data-aos-delay="250">
+            <div class="skill-head">
+              <span class="skill-icon"><i class="bx bx-code-alt" aria-hidden="true"></i></span>
+              <h3>Web &amp; Frontend <span class="skill-note">complementario</span></h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">HTML &amp; CSS</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Experiencia y educación ======= -->
+    <section id="resume" class="section">
+      <div class="container-xl">
+        <div class="section-head" data-aos="fade-up">
+          <h2>Experiencia y formación</h2>
+          <p>Trayectoria profesional y académica.</p>
+        </div>
+
+        <div class="resume-cols">
+          <!-- Experiencia -->
+          <div data-aos="fade-right">
+            <h3 class="resume-title"><i class="bx bx-briefcase" aria-hidden="true"></i> Experiencia laboral</h3>
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <span class="period">Oct 2023 — Actualidad</span>
+                <h4>AI Software Specialist</h4>
+                <p class="org">GBM Guatemala</p>
+                <ul>
+                  <li>Diseño e implementación de bots conversacionales en canales de WhatsApp y Facebook, con IBM Watson Assistant, IA clásica y NLP, incluyendo autenticación, manejo de sesiones y lógica conversacional.</li>
+                  <li>Desarrollo de soluciones de IA generativa y arquitecturas RAG con contexto y embeddings sobre IBM Cloud, AWS y Azure.</li>
+                  <li>Integraciones backend y desarrollo de microservicios en Node.js y Flask, con APIs de IA y comunicación en tiempo real mediante WebSockets.</li>
+                  <li>Despliegue y optimización de servicios con Docker y Kubernetes.</li>
+                  <li>Procesos ETL con Python y componentes de AWS para proyectos empresariales.</li>
+                  <li>Soluciones para entidades bancarias y otros clientes empresariales, desde la validación técnica hasta la puesta en producción.</li>
+                  <li>Capacitaciones a clientes sobre NLP, IA generativa y agentes; colaboración en un webinar de gobernanza de IA en IBM Cloud.</li>
+                </ul>
+              </div>
+
+              <div class="timeline-item">
+                <span class="period">Oct 2021 — Oct 2023</span>
+                <h4>Backend Developer</h4>
+                <p class="org">Niu Solutions</p>
+                <ul>
+                  <li>Desarrollo y despliegue de servidores y APIs en Node.js sobre AWS.</li>
+                  <li>Desarrollo de servicios con Express.js y conexión a bases de datos mediante ORM.</li>
+                  <li>Orquestación de DAGs en Apache Airflow para la integración de procesos ETL.</li>
+                  <li>Administración de MongoDB y despliegue de servicios en Linux (Apache, Nginx).</li>
+                  <li>Automatización de tareas en Linux mediante scripts en Bash.</li>
+                </ul>
+              </div>
+
+              <div class="timeline-item">
+                <span class="period">Oct 2020 — Jun 2021</span>
+                <h4>Desarrollador Web y Móvil</h4>
+                <p class="org">Group Technology (IdeaCodex)</p>
+                <ul>
+                  <li>Desarrollo de aplicaciones web con Laravel y Blade.</li>
+                  <li>Aplicaciones móviles híbridas en React Native para Android e iOS.</li>
+                  <li>Desarrollo e integración de APIs RESTful.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Educación -->
+          <div data-aos="fade-left">
+            <h3 class="resume-title"><i class="bx bx-book" aria-hidden="true"></i> Educación</h3>
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <span class="period">En curso</span>
+                <h4>Ingeniería en Sistemas de Información y Ciencias de la Computación</h4>
+                <p class="org">Universidad Mariano Gálvez de Guatemala</p>
+                <ul>
+                  <li>Estudios universitarios en curso · 41 de 50 cursos aprobados.</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Proyectos / Casos de estudio ======= -->
+    <section id="portfolio" class="section section-alt">
+      <div class="container-xl">
+        <div class="section-head" data-aos="fade-up">
+          <h2>Proyectos y casos de estudio</h2>
+          <p>Qué resolví y con qué tecnologías. Se omite información confidencial, de clientes y de sistemas internos.</p>
+        </div>
+
+        <div id="portfolio-filters" class="filters" role="group" aria-label="Filtrar proyectos por categoría" data-aos="fade-up">
+          <button type="button" class="filter-btn filter-active" data-filter="*" aria-pressed="true">Todos</button>
+          <button type="button" class="filter-btn" data-filter=".filter-ai" aria-pressed="false">IA &amp; Backend</button>
+          <button type="button" class="filter-btn" data-filter=".filter-web" aria-pressed="false">Web &amp; Móvil</button>
+        </div>
+
+        <div class="projects-grid" data-aos="fade-up" data-aos-delay="100">
+
+          <!-- Caso: bots multicanal -->
+          <article class="case-card filter-ai">
+            <span class="case-category">IA conversacional · Multicanal</span>
+            <h3>Bots conversacionales multicanal</h3>
+            <p>Diseño e implementación de soluciones conversacionales en WhatsApp y Facebook con IBM Watson Assistant,
+              NLP clásico e integraciones backend para automatización, autenticación y consulta de información
+              empresarial, con manejo de sesiones y lógica conversacional.</p>
+            <p class="case-role"><strong>Mi rol:</strong> desarrollo end-to-end del flujo conversacional, integraciones y backend.</p>
+            <div class="case-tags">
+              <span class="skill-tag">Watson Assistant</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">WhatsApp</span>
+              <span class="skill-tag">Facebook</span>
+              <span class="skill-tag">Node.js</span>
+            </div>
+          </article>
+
+          <!-- Caso: RAG -->
+          <article class="case-card filter-ai">
+            <span class="case-category">IA Generativa · RAG</span>
+            <h3>Asistentes con IA generativa y RAG</h3>
+            <p>Asistentes empresariales que combinan IA generativa con recuperación aumentada (RAG), usando embeddings y
+              orquestación de APIs sobre servicios cloud para responder con información contextual y actualizada.</p>
+            <p class="case-role"><strong>Mi rol:</strong> diseño de la arquitectura RAG, embeddings e integración de APIs de IA.</p>
+            <div class="case-tags">
+              <span class="skill-tag">IA Generativa</span>
+              <span class="skill-tag">RAG</span>
+              <span class="skill-tag">Embeddings</span>
+              <span class="skill-tag">IBM Cloud / AWS / Azure</span>
+            </div>
+          </article>
+
+          <!-- Caso: microservicios -->
+          <article class="case-card filter-ai">
+            <span class="case-category">Backend · Microservicios</span>
+            <h3>Microservicios de IA en tiempo real</h3>
+            <p>Servicios en Node.js y Flask con comunicación en tiempo real mediante WebSockets, desplegados con Docker y
+              Kubernetes, con foco en escalabilidad y baja latencia en consultas de IA.</p>
+            <p class="case-role"><strong>Mi rol:</strong> desarrollo de microservicios, despliegue y optimización.</p>
+            <div class="case-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">WebSockets</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">Kubernetes</span>
+            </div>
+          </article>
+
+          <!-- Caso: ETL -->
+          <article class="case-card filter-ai">
+            <span class="case-category">Datos · ETL</span>
+            <h3>Procesos ETL con Python y AWS</h3>
+            <p>Pipelines ETL con Python y componentes de AWS para integrar múltiples fuentes de datos en proyectos
+              empresariales, con procesamiento confiable y repetible.</p>
+            <p class="case-role"><strong>Mi rol:</strong> desarrollo e integración de los procesos ETL.</p>
+            <div class="case-tags">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">ETL</span>
+            </div>
+          </article>
+
+          <!-- Caso: Grupo Tecún -->
+          <article class="case-card filter-web">
+            <span class="case-category">Web · Laravel</span>
+            <h3>Grupo Tecún</h3>
+            <p>Desarrollo de aplicación web con Laravel para necesidades empresariales específicas, integrando módulos
+              personalizados y lógica backend orientada a los requerimientos del cliente.</p>
+            <p class="case-role"><strong>Mi rol:</strong> desarrollo web y backend a medida.</p>
+            <div class="case-tags">
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">APIs</span>
+            </div>
+          </article>
+
+          <!-- Caso: Payroll -->
+          <article class="case-card filter-web">
+            <span class="case-category">Web · Gestión interna</span>
+            <h3>Payroll</h3>
+            <p>Sistema de gestión desarrollado con Laravel para procesos internos. El acceso público fue retirado por
+              tratarse de una solución privada; se presenta como caso de estudio, no como demo pública.</p>
+            <p class="case-role"><strong>Mi rol:</strong> desarrollo del sistema de gestión y su lógica backend.</p>
+            <div class="case-tags">
+              <span class="skill-tag">Laravel</span>
+              <span class="skill-tag">MySQL</span>
+            </div>
+          </article>
+
+          <!-- Caso: App Tecún -->
+          <article class="case-card filter-web">
+            <span class="case-category">Móvil · React Native</span>
+            <h3>App Tecún</h3>
+            <p>Solución móvil orientada a funcionalidades específicas del cliente, con integración de interfaces y
+              backend según los requerimientos del proyecto, mediante consumo de APIs RESTful.</p>
+            <p class="case-role"><strong>Mi rol:</strong> desarrollo móvil e integración con APIs.</p>
+            <div class="case-tags">
+              <span class="skill-tag">React Native</span>
+              <span class="skill-tag">APIs REST</span>
+              <span class="skill-tag">Android / iOS</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Certificaciones y formación ======= -->
+    <section id="certs" class="section">
+      <div class="container-xl">
+        <div class="section-head" data-aos="fade-up">
+          <h2>Certificaciones y formación</h2>
+          <p>Credenciales verificables organizadas por área. Cada tarjeta enlaza al certificado oficial.</p>
+        </div>
+
+        <!-- IA Generativa -->
+        <div class="cert-category" data-aos="fade-up">
+          <h3 class="cert-category-title">
+            <i class="bx bx-brain" aria-hidden="true"></i> Inteligencia Artificial Generativa
+            <span class="count">3 credenciales</span>
+          </h3>
+          <div class="cert-grid">
+
+            <!-- Especialización destacada AWS -->
+            <article class="cert-card featured">
+              <span class="badge-spec">Especialización</span>
+              <p class="cert-issuer">Amazon Web Services (AWS)</p>
+              <h4>AWS Generative AI Applications</h4>
+              <p class="cert-meta">Especialización profesional que integra 3 cursos sobre aplicaciones de IA generativa con AWS.</p>
+              <ul class="spec-courses">
+                <li>
+                  <span>AI Fundamentals and the Cloud</span>
+                  <a href="https://coursera.org/share/8810265672e019256168ffd0ef49a1d3" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external" aria-hidden="true"></i> Ver</a>
+                </li>
+                <li>
+                  <span>AWS Services for AI Solutions</span>
+                  <a href="https://coursera.org/share/f43033b136008048325dbefc0831a613" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external" aria-hidden="true"></i> Ver</a>
+                </li>
+                <li>
+                  <span>Bringing Ideas to Life Using AI</span>
+                  <a href="https://coursera.org/share/fd30cf6cf11230019008f606a7176930" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external" aria-hidden="true"></i> Ver</a>
+                </li>
+              </ul>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="https://coursera.org/share/ec5bcfe44370d026192512db9bbf36fc" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-award" aria-hidden="true"></i> Ver especialización
+                </a>
+              </div>
+            </article>
+
+            <article class="cert-card">
+              <p class="cert-issuer">DeepLearning.AI</p>
+              <h4>Generative AI for Everyone</h4>
+              <p class="cert-meta">Fundamentos y ciclo de vida de proyectos de IA generativa.</p>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="https://coursera.org/share/27f50e10afb1fb9f8caa8db24d408662" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-link-external" aria-hidden="true"></i> Ver credencial
+                </a>
+              </div>
+            </article>
+
+            <article class="cert-card">
+              <p class="cert-issuer">University of Michigan</p>
+              <h4>Generative AI: Governance, Policy, and Emerging Regulation</h4>
+              <p class="cert-meta">Gobernanza, política y regulación emergente de la IA generativa.</p>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="https://coursera.org/share/429d7fefe7f5bba32a8320c354d0b7cd" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-link-external" aria-hidden="true"></i> Ver credencial
+                </a>
+              </div>
+            </article>
+
           </div>
         </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+        <!-- NLP -->
+        <div class="cert-category" data-aos="fade-up">
+          <h3 class="cert-category-title">
+            <i class="bx bx-message-square-dots" aria-hidden="true"></i> Procesamiento de Lenguaje Natural (NLP)
+            <span class="count">Especialización · 4 cursos</span>
+          </h3>
+          <div class="cert-grid">
 
-          <!-- Proyectos -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-tecun">
-            <div class="portfolio-wrap">
-              <img src="assets/img/tecun1.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/tecun1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-                <a href="http://tecunapp.com/" title="More Details"><i class="bx bx-link"></i></a>
+            <article class="cert-card featured">
+              <span class="badge-spec">Especialización · DeepLearning.AI</span>
+              <p class="cert-issuer">DeepLearning.AI</p>
+              <h4>Natural Language Processing Specialization</h4>
+              <p class="cert-meta">Especialización de NLP integrada por 4 cursos: clasificación, modelos probabilísticos, secuencias y atención.</p>
+              <ul class="spec-courses">
+                <li>
+                  <span>NLP with Classification and Vector Spaces</span>
+                  <a href="https://coursera.org/share/00713008adf8d37eaa469ba1d88a86e4" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external" aria-hidden="true"></i> Ver</a>
+                </li>
+                <li>
+                  <span>NLP with Probabilistic Models</span>
+                  <a href="https://coursera.org/share/d7398dc863b2fe97002e864418ab9c71" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external" aria-hidden="true"></i> Ver</a>
+                </li>
+                <li>
+                  <span>NLP with Sequence Models</span>
+                  <a href="https://coursera.org/share/c521b4103fe2459d4425e1af282dab77" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external" aria-hidden="true"></i> Ver</a>
+                </li>
+                <li>
+                  <span>NLP with Attention Models</span>
+                  <a href="https://coursera.org/share/ef044d9c7b3c3913d15a5fc9364f1653" target="_blank" rel="noopener noreferrer"><i class="bx bx-link-external" aria-hidden="true"></i> Ver</a>
+                </li>
+              </ul>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="https://coursera.org/share/2f5fe72f733ad363c616f7ac92995f17" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-award" aria-hidden="true"></i> Ver especialización
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-tecun">
-            <div class="portfolio-wrap">
-              <img src="assets/img/tecun2.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/tecun2.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-                <a href="http://tecunapp.com/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-tecun">
-            <div class="portfolio-wrap">
-              <img src="assets/img/tecun3.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/tecun3.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-                <a href="http://tecunapp.com/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-payroll">
-            <div class="portfolio-wrap">
-              <img src="assets/img/pay1.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/pay1.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-                <a href="http://40.84.212.203/planillaApp/public/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-payroll">
-            <div class="portfolio-wrap">
-              <img src="assets/img/pay2.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/pay2.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-                <a href="http://40.84.212.203/planillaApp/public/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-payroll">
-            <div class="portfolio-wrap">
-              <img src="assets/img/pay3.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/pay3.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-                <a href="http://40.84.212.203/planillaApp/public/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
+        </div>
 
-          <div class="ml-5 col-lg-12 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/tapp1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/tapp1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="ml-5 col-lg-12 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/tapp2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/tapp2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- Proyectos -->
+        <!-- Cloud y DevOps -->
+        <div class="cert-category" data-aos="fade-up">
+          <h3 class="cert-category-title">
+            <i class="bx bx-cloud" aria-hidden="true"></i> Cloud y DevOps
+            <span class="count">1 credencial</span>
+          </h3>
+          <div class="cert-grid">
 
-          <!-- Programas y lenguajes -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/ubuntu.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/ubuntu.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-                <a href="https://ubuntu.com/" title="More Details"><i class="bx bx-link"></i></a>
+            <article class="cert-card">
+              <p class="cert-issuer">IBM</p>
+              <h4>Continuous Integration and Continuous Delivery (CI/CD)</h4>
+              <p class="cert-meta">Integración y entrega continua, IaC, Kubernetes y automatización DevOps.</p>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="https://coursera.org/share/bd36c9c41aea7b17c5dd8f24be98f77b" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-link-external" aria-hidden="true"></i> Ver credencial
+                </a>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card pb-3">
-            <div class="portfolio-wrap">
-              <img src="assets/img/rn.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/rn.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-                <a href="https://reactnative.dev/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/laravel.webp" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/laravel.webp" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-                <a href="https://laravel.com/docs/8.x/installation" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/ms.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/ms.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-                <a href="https://www.mysql.com/" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/javas.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/javas.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/docker.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/docker.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Python3.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/Python3.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/MongoDB.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/MongoDB.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-              </div>
-            </div>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/Nodejs.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/Nodejs.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
+        <!-- Otras formaciones (credenciales existentes) -->
+        <div class="cert-category" data-aos="fade-up">
+          <h3 class="cert-category-title">
+            <i class="bx bx-book-bookmark" aria-hidden="true"></i> Datos, Python y otras formaciones
+            <span class="count">8 credenciales</span>
+          </h3>
+          <div class="cert-grid">
+
+            <article class="cert-card">
+              <p class="cert-issuer">Platzi</p>
+              <h4>Aprender a Aprender: Data e Inteligencia Artificial</h4>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="https://platzi.com/p/salazarvasquezgaryemmanuel/curso/2807-aprender-data-ia/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-link-external" aria-hidden="true"></i> Ver credencial
+                </a>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/airflow.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/airflow.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
+            <article class="cert-card">
+              <p class="cert-issuer">Platzi</p>
+              <h4>Curso de Power BI</h4>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="https://platzi.com/p/salazarvasquezgaryemmanuel/curso/2676-powerbi/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-link-external" aria-hidden="true"></i> Ver credencial
+                </a>
               </div>
-            </div>
-          </div>
-          <!-- Programas y lenguajes -->
+            </article>
 
-          <!-- Diplomados -->
-          <div class="ml-5 col-lg-6 col-md-6 portfolio-item filter-certify">
-            <div class="portfolio-wrap">
-              <img src="assets/img/CertificadoCoursera.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/CertificadoCoursera.png" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                <a href="https://coursera.org/share/2f5fe72f733ad363c616f7ac92995f17" title="More Details"><i
-                    class="bx bx-link"></i></a>
+            <article class="cert-card">
+              <p class="cert-issuer">Platzi</p>
+              <h4>Negocios con Data Science</h4>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="https://platzi.com/p/salazarvasquezgaryemmanuel/curso/2069-negocios-data-science/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-link-external" aria-hidden="true"></i> Ver credencial
+                </a>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="ml-5 col-lg-6 col-md-6 portfolio-item filter-certify">
-            <div class="portfolio-wrap">
-              <img src="assets/img/claravel.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/claravel.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-                <a href="http://ude.my/UC-353c8ccb-2f74-4a5f-a0ef-47eacdd23d80" title="More Details"><i
-                    class="bx bx-link"></i></a>
+            <article class="cert-card">
+              <p class="cert-issuer">Platzi</p>
+              <h4>Curso de Python</h4>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="https://platzi.com/p/salazarvasquezgaryemmanuel/curso/4227-python/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-link-external" aria-hidden="true"></i> Ver credencial
+                </a>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="ml-5 col-lg-6 col-md-6 portfolio-item filter-certify">
-            <div class="portfolio-wrap">
-              <img src="assets/img/cjs.png" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/cjs.png" data-gallery="portfolioGallery" class="portfolio-lightbox"><i
-                    class="bx bx-plus"></i></a>
-                <a href="http://ude.my/UC-17bb2ee0-bc27-46ed-9a45-7804211d394a" title="More Details"><i
-                    class="bx bx-link"></i></a>
+            <article class="cert-card">
+              <p class="cert-issuer">Platzi</p>
+              <h4>Python: Funciones y Estructuras de Datos</h4>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="https://platzi.com/p/salazarvasquezgaryemmanuel/curso/4260-python-funciones/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-link-external" aria-hidden="true"></i> Ver credencial
+                </a>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="ml-5 col-lg-6 col-md-6 portfolio-item filter-certify">
-            <div class="portfolio-wrap">
-              <img src="assets/img/diploma-aprender-data-ia.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/diploma-aprender-data-ia.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                <a href="https://platzi.com/p/salazarvasquezgaryemmanuel/curso/2807-aprender-data-ia/diploma/detalle/"
-                  title="More Details"><i class="bx bx-link"></i></a>
+            <article class="cert-card">
+              <p class="cert-issuer">Platzi</p>
+              <h4>Curso de Terminal y Línea de Comandos</h4>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="https://platzi.com/p/salazarvasquezgaryemmanuel/curso/2292-terminal/diploma/detalle/" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-link-external" aria-hidden="true"></i> Ver credencial
+                </a>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="ml-5 col-lg-6 col-md-6 portfolio-item filter-certify">
-            <div class="portfolio-wrap">
-              <img src="assets/img/diploma-powerbi (1)_page-0001.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/diploma-powerbi (1)_page-0001.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                <a href="https://platzi.com/p/salazarvasquezgaryemmanuel/curso/2676-powerbi/diploma/detalle/"
-                  title="More Details"><i class="bx bx-link"></i></a>
+            <article class="cert-card">
+              <p class="cert-issuer">Udemy</p>
+              <h4>Curso de Laravel</h4>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="http://ude.my/UC-353c8ccb-2f74-4a5f-a0ef-47eacdd23d80" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-link-external" aria-hidden="true"></i> Ver credencial
+                </a>
               </div>
-            </div>
-          </div>
+            </article>
 
-          <div class="ml-5 col-lg-6 col-md-6 portfolio-item filter-certify">
-            <div class="portfolio-wrap">
-              <img src="assets/img/diploma-negocios-data-science_page-0001.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/diploma-negocios-data-science_page-0001.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                <a href="https://platzi.com/p/salazarvasquezgaryemmanuel/curso/2069-negocios-data-science/diploma/detalle/"
-                  title="More Details"><i class="bx bx-link"></i></a>
+            <article class="cert-card">
+              <p class="cert-issuer">Udemy</p>
+              <h4>Curso de JavaScript</h4>
+              <div class="cert-link">
+                <a class="btn btn-primary btn-sm" href="http://ude.my/UC-17bb2ee0-bc27-46ed-9a45-7804211d394a" target="_blank" rel="noopener noreferrer">
+                  <i class="bx bx-link-external" aria-hidden="true"></i> Ver credencial
+                </a>
               </div>
-            </div>
+            </article>
+
           </div>
-
-          <div class="ml-5 col-lg-6 col-md-6 portfolio-item filter-certify">
-            <div class="portfolio-wrap">
-              <img src="assets/img/diploma-python-funciones (1)_page-0001.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/diploma-python-funciones (1)_page-0001.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                <a href="https://platzi.com/p/salazarvasquezgaryemmanuel/curso/4260-python-funciones/diploma/detalle/"
-                  title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="ml-5 col-lg-6 col-md-6 portfolio-item filter-certify">
-            <div class="portfolio-wrap">
-              <img src="assets/img/diploma-python(1)_page-0001.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/diploma-python(1)_page-0001.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                <a href="https://platzi.com/p/salazarvasquezgaryemmanuel/curso/4227-python/diploma/detalle/"
-                  title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="ml-5 col-lg-6 col-md-6 portfolio-item filter-certify">
-            <div class="portfolio-wrap">
-              <img src="assets/img/diploma-terminal_page-0001.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/diploma-terminal_page-0001.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                <a href="https://platzi.com/p/salazarvasquezgaryemmanuel/curso/2292-terminal/diploma/detalle/"
-                  title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- diploma-aprender-data-ia.jpg -->
-          <!-- Diplomados -->
-
         </div>
 
       </div>
     </section>
-    <!-- Portafolio -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
+    <!-- ======= Contacto ======= -->
+    <section id="contact" class="section section-alt">
+      <div class="container-xl">
+        <div class="section-head" data-aos="fade-up">
           <h2>Contacto</h2>
+          <p>¿Hablamos sobre un proyecto o una oportunidad? Me encantará conversar.</p>
         </div>
 
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="contact-item">
+              <span class="icon"><i class="bx bx-map" aria-hidden="true"></i></span>
+              <div>
                 <h4>Ubicación</h4>
-                <p>Chinautla, Guatemala</p>
+                <p>Guatemala</p>
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
+            </div>
+            <div class="contact-item">
+              <span class="icon"><i class="bx bx-envelope" aria-hidden="true"></i></span>
+              <div>
                 <h4>Email</h4>
                 <p><a href="mailto:salazarvasquezgaryemmanuel@gmail.com">salazarvasquezgaryemmanuel@gmail.com</a></p>
               </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Celular</h4>
-                <p><a href="tel:+502 47772975">+502 30020662</a></p>
+            </div>
+            <div class="contact-item">
+              <span class="icon"><i class="bx bx-phone" aria-hidden="true"></i></span>
+              <div>
+                <h4>Teléfono</h4>
+                <p><a href="tel:+50230020662">+502 3002-0662</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="icon"><i class="bx bxl-linkedin" aria-hidden="true"></i></span>
+              <div>
+                <h4>LinkedIn</h4>
+                <p><a href="https://www.linkedin.com/in/gary-salazar-43a0241ab/" target="_blank" rel="noopener noreferrer">Gary Salazar</a></p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-5 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.436258078402!2d-90.49092098562991!3d14.687903978870033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85899915b7d77551%3A0xa51530ee9f96cc56!2sFarmacia%20Jocotales!5e0!3m2!1ses!2sgt!4v1620927321923!5m2!1ses!2sgt"
-              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <div class="contact-cta" data-aos="fade-left">
+            <h3>Construyamos algo con IA</h3>
+            <p>Especialista en IA generativa, NLP, backend e integraciones empresariales. Disponible para proyectos y
+              nuevas oportunidades profesionales.</p>
+            <div class="contact-cta-actions">
+              <a class="btn btn-cv" href="assets/docs/CV_Gary_Salazar.pdf" download>
+                <i class="bx bx-download" aria-hidden="true"></i> Descargar CV
+              </a>
+              <a class="btn btn-outline" href="mailto:salazarvasquezgaryemmanuel@gmail.com">
+                <i class="bx bx-paper-plane" aria-hidden="true"></i> Enviar un correo
+              </a>
+            </div>
           </div>
-
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-
-  </main><!-- End #main -->
+  </main>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>GarySalazar 2025</span></strong>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
+    &copy; <span id="year-footer"></span> Gary Salazar — AI Software Engineer &amp; Backend Developer.
+  </footer>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="bi bi-arrow-up-short" aria-hidden="true"></i>
+  </a>
 
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <!-- Main JS -->
+  <script src="assets/js/portfolio.js"></script>
 
 </body>
 
